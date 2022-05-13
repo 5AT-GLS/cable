@@ -1,6 +1,11 @@
 <html>
     <head>
         <title>5AT.GLS</title>
+        <script type = "text/javascript">
+            function myfunction() {
+                alert("Scopiamo?");
+            }
+        </script>
         <style>
             body {
                 background: linear-gradient(to right, rgb(241, 143, 242), rgb(2, 62, 228));
@@ -10,7 +15,7 @@
                 font-size: 500%;
                 font-weight: bolder;
                 font-family: arial;
-                text-shadow: 4px 4px black;
+                text-shadow: 3pt 3pt black;
                 text-align: center;
             }
             section {
@@ -19,12 +24,13 @@
                 height: 100%;
                 align-items:center;
                 justify-content:center;
+                padding-left: 40%;
             }
         </style>
     </head>
     <body>
         <section>
-            <h1>Scopiamo?<h1>
+            <input type="button" onclick="myfunction()" value="PREMI">
         <section>
     </body>
 </html>
