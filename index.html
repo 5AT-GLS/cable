@@ -1,35 +1,37 @@
 <html>
     <head>
         <title>5AT.GLS</title>
-        <script type = "text/javascript">
-            function myfunction() {
-                alert("how are you");
-            }
-        </script>
-        <style>
-            body {
+    </head>
+    <style>
+        body {
                 background: linear-gradient(to right, rgb(241, 143, 242), rgb(2, 62, 228));
             }
-            h1 {
-                color: rgb(255, 255, 255);
-                font-size: 500%;
-                font-weight: bolder;
-                font-family: arial;
-                text-shadow: 3pt 3pt black;
-                text-align: center;
-            }
-            section {
-                display: flex;
-                width: 100%;
-                height: 100%;
-                align-items:center;
-                justify-content:center;
-            }
-        </style>
-    </head>
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 500%;
+            font-weight: bolder;
+            font-family: arial;
+            text-shadow: 3pt 3pt black;
+            text-align: center;
+        }
+        section {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items:center;
+            justify-content:center;
+        }
+    </style>
+
     <body>
         <section>
-            <h1>Scopiamo?<h1>
-        <section>
+            <h1 id="demo"></h1>
+        </section>
+        <script>
+            let x = Math.floor((Math.random() * 10));
+            const quotes = ["Scopiamo?", "Il cavo", "Ho il cazzo piccolo", "Signorini", "Vi convince questo?", "Okay let's go","Centro stupri staranzano","Statale","Trifase","I matti di via mattei 12"];
+            document.getElementById("demo").innerHTML = quotes[x];
+        </script>
+
     </body>
 </html>
