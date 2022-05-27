@@ -33,10 +33,17 @@
             const allQuotes = ["Vuoi Scopare?", "Kiss me", "Ho il cazzo piccolo", "E' il momento di sgambettare",
                             "Vi convince questo?", "Okay let's go","Riprendiamoci Fiume","Fatti me e rimedi",
                             "VINCERE E VINCEREMO!","Kiss or Slap?","🍋?","🍑✋","Twerk?","Butta un drink",
-                            "famo una raglia","Ti metto a π/2","0500img1.gif","0800img2.png"];
+                            "famo una raglia","Ti metto a π/2","0500img1.gif","0800img2.png","0800img3.jpeg"];
             const newQuotes = ["Vuoi Scopare?", "Kiss me", "Fatti me e rimedi", "Kiss or Slap?","🍋?","🍑✋","Twerk?","Butta un drink","Ti metto a π/2"];
             
-            let b = 1;
+            const d = new Date();
+            let hour = d.getHours();
+
+            let b = 0;
+
+            if ( hour > 1 && hour < 6) {
+                b = 1;
+            }
 
             let quotes = [];
             if (b==0) {
@@ -48,6 +55,7 @@
             let l = quotes.length;
             let x = Math.floor((Math.random() * l));
             let q = quotes[x];
+
             if (q.substring(4,7) == "img") {
                 document.getElementById("demo").innerHTML = "";
                 var img = document.createElement("img");
