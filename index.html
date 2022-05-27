@@ -30,10 +30,21 @@
         </section>
         <script>
             
-            const quotes = ["Vuoi Scopare?", "Kiss me", "Ho il cazzo piccolo", "E' il momento di sgambettare",
+            const allQuotes = ["Vuoi Scopare?", "Kiss me", "Ho il cazzo piccolo", "E' il momento di sgambettare",
                             "Vi convince questo?", "Okay let's go","Riprendiamoci Fiume","Fatti me e rimedi",
                             "VINCERE E VINCEREMO!","Kiss or Slap?","🍋?","🍑✋","Twerk?","Butta un drink",
                             "famo una raglia","Ti metto a π/2","0500img1.gif","0800img2.png"];
+            const newQuotes = ["Vuoi Scopare?", "Kiss me", "Fatti me e rimedi", "Kiss or Slap?","🍋?","🍑✋","Twerk?","Butta un drink","Ti metto a π/2"];
+            
+            let b = 0;
+
+            let quotes = [];
+            if (b==0) {
+                quotes = allQuotes;
+            } else {
+                quotes = newQuotes;
+            }
+            
             let l = quotes.length;
             let x = Math.floor((Math.random() * l));
             let q = quotes[x];
