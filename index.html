@@ -17,7 +17,7 @@
         section {
             display: flex;
             width: 100%;
-            height: auto;
+            height: 100%;
             align-items:center;
             justify-content:center;
         }
@@ -26,14 +26,27 @@
     <body>
         <section>
             <h1 id="demo"></h1>
+            <div id="header"></div>
         </section>
-        <center><img src="gif1.gif" alt="Torre Inferno" height="300" width="400"></center>
         <script>
-            let x = Math.floor((Math.random() * 10));
-            const quotes = ["Scopiamo?", "Il cavo", "Ho il cazzo piccolo", "Signorini", "Vi convince questo?", "Okay let's go","Centro stupri staranzano","Statale","Trifase","I matti di via mattei 12"];
-            //let q = quotes[x];
-            let q = "Vi convince questo?"
-            document.getElementById("demo").innerHTML = q;
+            
+            const quotes = ["Vuoi Scopare?", "Kiss me", "Ho il cazzo piccolo", "E' il momento di sgambettare",
+                            "Vi convince questo?", "Okay let's go","Riprendiamoci Fiume","Fatti me e rimedi",
+                            "VINCERE E VINCEREMO!","Kiss or Slap?","🍋?","🍑✋","Twerk?","Butta un drink",
+                            "famo una raglia","Ti metto a π/2","img1.gif","img1.gif","img1.gif"];
+            let l = quotes.length;
+            let x = Math.floor((Math.random() * l));
+            let q = quotes[x];
+            if (q.substring(0,3) == "img") {
+                document.getElementById("demo").innerHTML = "";
+                var img = document.createElement("img");
+                img.src = q;
+                img.width = 500;
+                var src = document.getElementById("header");
+                src.appendChild(img);
+            } else {
+                document.getElementById("demo").innerHTML = q;
+            }
             
         </script>
 
