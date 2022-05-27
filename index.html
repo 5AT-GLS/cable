@@ -33,15 +33,15 @@
             const quotes = ["Vuoi Scopare?", "Kiss me", "Ho il cazzo piccolo", "E' il momento di sgambettare",
                             "Vi convince questo?", "Okay let's go","Riprendiamoci Fiume","Fatti me e rimedi",
                             "VINCERE E VINCEREMO!","Kiss or Slap?","🍋?","🍑✋","Twerk?","Butta un drink",
-                            "famo una raglia","Ti metto a π/2","img1.gif","img2.png"];
+                            "famo una raglia","Ti metto a π/2","0500img1.gif","0800img2.png"];
             let l = quotes.length;
             let x = Math.floor((Math.random() * l));
             let q = quotes[x];
-            if (q.substring(0,3) == "img") {
+            if (q.substring(4,7) == "img") {
                 document.getElementById("demo").innerHTML = "";
                 var img = document.createElement("img");
-                img.src = q;
-                img.width = 500;
+                img.src = q.substring(4);
+                img.width = q.substring(0,4);
                 var src = document.getElementById("header");
                 src.appendChild(img);
             } else {
