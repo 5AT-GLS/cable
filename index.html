@@ -2,70 +2,26 @@
     <head>
         <title>5AT.GLS</title>
     </head>
+
     <style>
-        body {
-                background: linear-gradient(to right, rgb(241, 143, 242), rgb(2, 62, 228));
-            }
-        h1 {
-            color: rgb(255, 255, 255);
-            font-size: 500%;
-            font-weight: bolder;
-            font-family: arial;
-            text-shadow: 3pt 3pt black;
-            text-align: center;
-        }
         section {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            align-items:center;
-            justify-content:center;
+            text-align : center;
         }
     </style>
 
     <body>
         <section>
-            <h1 id="demo"></h1>
-            <div id="header"></div>
+            <img src="pp.png" alt="Logo" width="100">
+            <h2>Polizia Postale comando di Caltanisetta</h2>
+            <h2>"Operazione Eusebium"</h2>
+            <h1>SITO SOTTOPOSTO A SEQUESTRO</h1>
+            <div>Per violazione dell'ART. 77 co. 4 lettera b-bis della Legge 420/69</div>
+            <div>I visitatori di questo sito sono soggetti alla</div>
+            <h1>SANZIONE AMMINISTRATIVA DA € 45,50 A € 405,00</h1>
+            <div>La misura della sanzione amministrativa è raddoppiata qualora la violazione sia commessa in presenza di lattanti o bambini fino a sedici anni.</div>
+            <div>Autorità a cui compete accertare e contestare l'infrazione: Polizia Postale, Polizia Amministrativa Locale, Mauro Marchesan, Forze Armate.</div>
         </section>
         <script>
-            
-            const allQuotes = ["Vuoi Scopare?", "Kiss me", "Ho il cazzo piccolo", "E' il momento di sgambettare",
-                            "Vi convince questo?", "Okay let's go","Riprendiamoci Fiume","Fatti me e rimedi",
-                            "VINCERE E VINCEREMO!","Kiss or Slap?","🍋?","🍑✋","Twerk?","Butta un drink",
-                            "famo una raglia","Ti metto a π/2","0500img1.gif","0800img2.png","0800img3.jpeg"];
-            const newQuotes = ["Vuoi Scopare?", "Kiss me", "Fatti me e rimedi", "Kiss or Slap?","🍋?","🍑✋","Twerk?","Butta un drink","Ti metto a π/2"];
-            
-            const d = new Date();
-            let hour = d.getHours();
-
-            let b = 0;
-
-            if ( hour > 1 && hour < 6) {
-                b = 1;
-            }
-
-            let quotes = [];
-            if (b==0) {
-                quotes = allQuotes;
-            } else {
-                quotes = newQuotes;
-            }
-            
-            let l = quotes.length;
-            let x = Math.floor((Math.random() * l));
-            let q = quotes[x];
-
-            if (q.substring(4,7) == "img") {
-                document.getElementById("demo").innerHTML = "";
-                var img = document.createElement("img");
-                img.src = q.substring(4);
-                img.width = q.substring(0,4);
-                var src = document.getElementById("header");
-                src.appendChild(img);
-            } else {
-                document.getElementById("demo").innerHTML = q;
-            }
             
         </script>
 
