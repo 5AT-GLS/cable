@@ -24,12 +24,20 @@
     </style>
 
     <body>
-        <div style="text-align: center;">
+        <div style="position: relative; height: 100vh;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <div style="text-align: center;">
+                    <input type="number" id="eta" name="eta" style="width: 5vw;">
+                    <button style="width: 5vw;" onclick="leggiValore()">Okay</button>
+                    <h1 style="width: 80vw;" id="demo"></h1>
+            </div>
+          </div>
+        <!-- <div style="text-align: center;">
             <p></p>
             <input type="number" id="eta" name="eta" style="width: 200px;">
             <button style="width: 50px;" onclick="leggiValore()">Okay</button>
             <h1 id="demo"></h1>
-        </div>
+        </div> -->
         <!-- <label for="eta">Età:</label>
             <input type="number" id="eta" name="eta">
             <button onclick="leggiValore()">Okay</button>
